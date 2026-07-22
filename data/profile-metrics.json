@@ -1,0 +1,106 @@
+{
+  "generatedAt": "2026-07-22T17:28:10.230Z",
+  "source": "GitHub public REST API (metadata only)",
+  "user": "lighsiegfried",
+  "selectedRepositories": [
+    {
+      "name": "portafolio",
+      "category": "Web / Full-stack",
+      "status": "Active development",
+      "language": "JavaScript",
+      "pushed_at": "2026-07-22T06:02:51Z",
+      "pushed_year": 2026,
+      "html_url": "https://github.com/lighsiegfried/portafolio"
+    },
+    {
+      "name": "agent-automaton",
+      "category": "AI / Automation",
+      "status": "Active development",
+      "language": "Python",
+      "pushed_at": "2026-07-16T19:39:05Z",
+      "pushed_year": 2026,
+      "html_url": "https://github.com/lighsiegfried/agent-automaton"
+    },
+    {
+      "name": "Finanzas",
+      "category": "Mobile",
+      "status": "Active development",
+      "language": "HTML",
+      "pushed_at": "2026-07-22T00:19:02Z",
+      "pushed_year": 2026,
+      "html_url": "https://github.com/lighsiegfried/Finanzas"
+    },
+    {
+      "name": "modelos3d",
+      "category": "Web / Full-stack",
+      "status": "Complete demo",
+      "language": "JavaScript",
+      "pushed_at": "2025-07-07T20:33:32Z",
+      "pushed_year": 2025,
+      "html_url": "https://github.com/lighsiegfried/modelos3d"
+    },
+    {
+      "name": "crud_nodejs",
+      "category": "Web / Full-stack",
+      "status": "Complete demo",
+      "language": "HTML",
+      "pushed_at": "2025-06-12T05:37:57Z",
+      "pushed_year": 2025,
+      "html_url": "https://github.com/lighsiegfried/crud_nodejs"
+    },
+    {
+      "name": "proyecto_software",
+      "category": "Web / Full-stack",
+      "status": "Earlier work",
+      "language": "JavaScript",
+      "pushed_at": "2024-06-08T15:03:25Z",
+      "pushed_year": 2024,
+      "html_url": "https://github.com/lighsiegfried/proyecto_software"
+    }
+  ],
+  "distributions": {
+    "languages": [
+      {
+        "label": "JavaScript",
+        "value": 3
+      },
+      {
+        "label": "HTML",
+        "value": 2
+      },
+      {
+        "label": "Python",
+        "value": 1
+      }
+    ],
+    "categories": [
+      {
+        "label": "Web / Full-stack",
+        "value": 4
+      },
+      {
+        "label": "AI / Automation",
+        "value": 1
+      },
+      {
+        "label": "Mobile",
+        "value": 1
+      }
+    ],
+    "maturity": [
+      {
+        "label": "Active development",
+        "value": 3
+      },
+      {
+        "label": "Complete demo",
+        "value": 2
+      },
+      {
+        "label": "Earlier work",
+        "value": 1
+      }
+    ]
+  },
+  "notes": "GitHub 'language' is a file-extension classification, not a proficiency measure. Category and status are human-verified in scripts/generate-profile-metrics.mjs."
+}

@@ -1,0 +1,68 @@
+# Regenerates the profile's cached metric SVGs from PUBLIC GitHub metadata.
+# Truthful, deterministic assets — no invented numbers, no third-party widgets.
+name: Update profile metrics
+
+on:
+  # Manual run from the Actions tab.
+  workflow_dispatch:
+  # Weekly refresh (Mondays 06:00 UTC) so charts track new public activity.
+  schedule:
+    - cron: "0 6 * * 1"
+  # Re-run only when the generator script itself changes. The workflow does NOT
+  # watch its own file (prevents self-triggering on workflow edits), and every
+  # commit it makes carries [skip ci], so there is no infinite loop.
+  push:
+    branches: [main]
+    paths:
+      - "scripts/generate-profile-metrics.mjs"
+
+# Least privilege: only needs to push regenerated assets back to the repo.
+permissions:
+  contents: write
+
+# Prevent overlapping runs from racing on the commit.
+concurrency:
+  group: update-profile-metrics
+  cancel-in-progress: false
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate metric assets
+        # GITHUB_TOKEN only raises the public-API rate limit; the script reads
+        # public data only and never exposes the token.
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/generate-profile-metrics.mjs
+
+      - name: Commit changes only if assets changed
+        run: |
+          # Attribute BOTH author and committer to the repository owner — never the
+          # Actions bot. GitHub's contributor graph keys off the commit author/
+          # committer identity (not the pusher), so this keeps github-actions[bot]
+          # out of the contributor list. See CLAUDE.md -> "Git attribution policy".
+          OWNER_NAME="Wilson"
+          OWNER_EMAIL="130312477+lighsiegfried@users.noreply.github.com"
+          git config user.name  "$OWNER_NAME"
+          git config user.email "$OWNER_EMAIL"
+          # Stage generated outputs only.
+          git add data/profile-metrics.json assets/metrics/*.svg
+          if git diff --cached --quiet; then
+            echo "No metric changes — nothing to commit."
+            exit 0
+          fi
+          # Explicit --author guarantees authorship even if runner config drifts.
+          # Never add a Co-authored-by trailer. [skip ci] prevents re-triggering.
+          git commit \
+            --author="$OWNER_NAME <$OWNER_EMAIL>" \
+            -m "chore(profile): refresh cached metric assets [skip ci]"
+          git push

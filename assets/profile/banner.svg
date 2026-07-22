@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Wilson — Full-Stack Software Developer. Web, mobile and AI-assisted applications.">
+  <title>Wilson — Full-Stack Software Developer</title>
+  <desc>Self-contained dark banner that renders legibly in both GitHub light and dark themes.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#6366F1"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#6366F1" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Self-contained background: independent of the page theme -->
+  <rect x="0" y="0" width="1200" height="300" rx="18" fill="url(#bg)"/>
+  <rect x="0.5" y="0.5" width="1199" height="299" rx="17.5" fill="none" stroke="#334155" stroke-width="1"/>
+
+  <!-- Accent bar -->
+  <rect x="72" y="92" width="8" height="116" rx="4" fill="url(#accent)"/>
+
+  <!-- Name -->
+  <text x="108" y="148" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="66" font-weight="700" fill="#F8FAFC">Wilson</text>
+
+  <!-- Title -->
+  <text x="110" y="192" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="30" font-weight="500" fill="#CBD5E1">Full-Stack Software Developer</text>
+
+  <!-- Accent underline under the title -->
+  <rect x="110" y="206" width="360" height="3" rx="1.5" fill="url(#rule)"/>
+
+  <!-- Keyword line (evidenced by public repositories) -->
+  <text x="110" y="240" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="18" font-weight="400" letter-spacing="1.6" fill="#94A3B8">WEB&#160;&#160;&#183;&#160;&#160;MOBILE&#160;&#160;&#183;&#160;&#160;AI-ASSISTED APPLICATIONS</text>
+
+  <!-- Restrained decorative dot grid (top-right) -->
+  <g fill="#334155">
+    <circle cx="1072" cy="60" r="3"/><circle cx="1096" cy="60" r="3"/><circle cx="1120" cy="60" r="3"/><circle cx="1144" cy="60" r="3"/>
+    <circle cx="1072" cy="84" r="3"/><circle cx="1096" cy="84" r="3"/><circle cx="1120" cy="84" r="3"/><circle cx="1144" cy="84" r="3"/>
+    <circle cx="1072" cy="108" r="3"/><circle cx="1096" cy="108" r="3"/><circle cx="1120" cy="108" r="3"/><circle cx="1144" cy="108" r="3"/>
+  </g>
+</svg>

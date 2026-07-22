@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-label="modelos3d — 3D modeling on the web. Technologies: Next.js, React, JavaScript, 3D.">
+  <title>modelos3d — 3D modeling on the web</title>
+  <desc>modelos3d — 3D modeling on the web. Technologies: Next.js, React, JavaScript, 3D. Branded project cover, not a screenshot.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0F172A"/><stop offset="1" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#38BDF8"/><stop offset="1" stop-color="#6366F1"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1200" height="400" rx="20" fill="url(#bg)"/>
+  <rect x="0.5" y="0.5" width="1199" height="399" rx="19.5" fill="none" stroke="#334155" stroke-width="1"/>
+
+  <!-- wordmark -->
+  <text x="64" y="72" font-size="20" font-weight="600" letter-spacing="0.5" fill="#94A3B8"
+    font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif">lighsiegfried</text>
+
+  <!-- accent bar + name -->
+  <rect x="64" y="150" width="8" height="96" rx="4" fill="url(#accent)"/>
+  <text x="92" y="212" font-size="64" font-weight="700" fill="#F8FAFC"
+    font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif">modelos3d</text>
+  <text x="94" y="256" font-size="26" font-weight="500" fill="#CBD5E1"
+    font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif">3D modeling on the web</text>
+
+  <!-- tech chips -->
+  <rect x="64" y="320" width="90" height="34" rx="8" fill="#172033" stroke="#334155"/>
+    <text x="109" y="342" text-anchor="middle" font-size="17" fill="#CBD5E1"
+      font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif">Next.js</text>
+    <rect x="166" y="320" width="73" height="34" rx="8" fill="#172033" stroke="#334155"/>
+    <text x="202.5" y="342" text-anchor="middle" font-size="17" fill="#CBD5E1"
+      font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif">React</text>
+    <rect x="251" y="320" width="116" height="34" rx="8" fill="#172033" stroke="#334155"/>
+    <text x="309" y="342" text-anchor="middle" font-size="17" fill="#CBD5E1"
+      font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif">JavaScript</text>
+    <rect x="379" y="320" width="47" height="34" rx="8" fill="#172033" stroke="#334155"/>
+    <text x="402.5" y="342" text-anchor="middle" font-size="17" fill="#CBD5E1"
+      font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif">3D</text>
+
+  <!-- decorative dot grid -->
+  <g fill="#334155">
+    <circle cx="1064" cy="60" r="3"/><circle cx="1088" cy="60" r="3"/><circle cx="1112" cy="60" r="3"/><circle cx="1136" cy="60" r="3"/>
+    <circle cx="1064" cy="84" r="3"/><circle cx="1088" cy="84" r="3"/><circle cx="1112" cy="84" r="3"/><circle cx="1136" cy="84" r="3"/>
+  </g>
+</svg>

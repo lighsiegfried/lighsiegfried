@@ -1,0 +1,12 @@
+# Internal working reports — private planning, not for the public profile repo.
+# Contains content-gaps notes explicitly marked "do NOT publish".
+github-modernization-report/
+CLAUDE.md
+
+# Node
+node_modules/
+npm-debug.log*
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
