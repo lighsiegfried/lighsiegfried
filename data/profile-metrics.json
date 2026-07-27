@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-22T18:14:36.115Z",
+  "generatedAt": "2026-07-27T10:05:20.352Z",
   "source": "GitHub public REST API (metadata only)",
   "user": "lighsiegfried",
   "selectedRepositories": [
@@ -25,8 +25,8 @@
       "name": "Finanzas",
       "category": "Mobile",
       "status": "Active development",
-      "language": "HTML",
-      "pushed_at": "2026-07-22T00:19:02Z",
+      "language": "Kotlin",
+      "pushed_at": "2026-07-23T00:10:38Z",
       "pushed_year": 2026,
       "html_url": "https://github.com/lighsiegfried/Finanzas"
     },
@@ -66,7 +66,11 @@
       },
       {
         "label": "HTML",
-        "value": 2
+        "value": 1
+      },
+      {
+        "label": "Kotlin",
+        "value": 1
       },
       {
         "label": "Python",
